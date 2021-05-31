@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  
+    <script>
+        function calculate()
+        
+        {
+            var x=Number(document.getElementById("select").value);
+            var n = Number(document.getElementById("numberofday").value);
+            var a = 40000;
+            var b = 10000;
+            var c = 5000;
+            var d = 4000;
+          switch (x)
+            {
+                case a:
+                    document.getElementById("result").innerHTML="Total cost is $"+(40000*n);
+                    break;
+                    case b:
+                    document.getElementById("result").innerHTML="Total cost is $"+(10000*n);
+                    break;
+                    case c:
+                    document.getElementById("result").innerHTML="Total cost is $"+(5000*n);
+                    break;
+                    case d:
+                    document.getElementById("result").innerHTML="Total cost is $"+(4000*n);
+                    break;
+                    default:
+                    break;
+            }
+          
+        }
+        
+        
+    </script>
+<body>
+    <h2>Events Cost Calculation</h2><br>
+    <select  id = "select" name = "selectEvents">
+        <option value = "40000">Corporate Event</option>
+        <option value = "10000">Wedding Event</option>
+        <option value = "5000">Social Event</option>
+        <option value = "4000">College Event</option>
+        
+    </select><br>
+    Number of days : <input id = "numberofday"><br>
+    <button id = "calculate" onclick = "calculate()" >Calculate</button><br>
+    
+    <div id = "result"> 
+        
+    </div>
+</body>   
+</html>
